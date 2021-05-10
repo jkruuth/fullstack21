@@ -1,1 +1,1 @@
-#jkruuth hy full stack 2021
+# jkruuth HY full stack
