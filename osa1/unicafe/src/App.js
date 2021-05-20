@@ -28,6 +28,48 @@ const Statistics = (props) => {
 }
 
 
+const StatisticsArray = (props) => {
+  if (props.good + props.neutral + props.bad === 0) {
+    return (
+      <div>
+        <h1>statistics</h1>
+        No feedback given
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <h1>statistics</h1>
+      <table>
+        <tbody>
+      <tr>
+        <td>good</td>
+        <td>{props.good}</td>
+      </tr>
+      <tr>
+        <td>neutral</td>
+        <td>{props.neutral}</td>
+      </tr>
+      <tr>
+        <td>bad</td>
+        <td>{props.bad}</td>
+      </tr>
+      <tr>
+        <td>all</td>
+        <td>{props.good + props.neutral + props.bad}</td>
+      </tr>
+      <tr>
+        <td>average</td>
+        <td>{((props.good * 1) + (props.neutral * 0) + (props.bad * -1)) / (props.good + props.neutral + props.bad)}</td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+  )
+}
+
+
 const StatisticLine = (props) => {
   return(
   <p>{props.text} {props.value} {props.merkki}</p>
@@ -71,7 +113,12 @@ const App = () => {
       <Button handleClick={handleNeutral} text='neutral' />
       <Button handleClick={handleBad} text='bad' />
       <Statistics good={good} neutral={neutral} bad={bad}/>
+
+      <StatisticsArray good={good} neutral={neutral} bad={bad}/>
     </div>
+
+    
+    
   )
 }
 
