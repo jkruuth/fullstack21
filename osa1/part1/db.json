@@ -4,7 +4,7 @@
       "id": 1,
       "content": "HTML is easy",
       "date": "2020-01-10T17:30:31.098Z",
-      "important": true
+      "important": false
     },
     {
       "id": 2,
@@ -23,6 +23,18 @@
       "date": "2021-05-25T10:46:13.451Z",
       "important": false,
       "id": 4
+    },
+    {
+      "content": "",
+      "date": "2021-05-27T09:42:19.033Z",
+      "important": false,
+      "id": 5
+    },
+    {
+      "content": "sadsa",
+      "date": "2021-05-27T09:42:23.755Z",
+      "important": false,
+      "id": 6
     }
   ]
 }
