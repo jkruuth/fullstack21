@@ -28,17 +28,18 @@ const App = () => {
     }, 5000)
   }  
 
-  const handlePoisto = (event,id) => {    
+   const handlePoisto = (event,id) => {    
     event.preventDefault()
     const poistettu = persons.find(person => person.id === id)
-    axios.delete(`http://localhost:3001/persons/${id}`)  
+    personService
+      .poisto(id)  
       .then(res => {
         const loput = persons.filter(person => person.id !== id);
-        setMessage(`Deleted ${poistettu.name}`)
+        notificationType(`Deleted ${poistettu.name}`)
         setPersons(loput);
       })  
     
-  }
+  } 
 
   const handleNameChange = (event) => {
     console.log(event.target.value)
