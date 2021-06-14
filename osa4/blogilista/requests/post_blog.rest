@@ -2,8 +2,8 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-    "title": "Parhaat ruokapaikat EU",
-    "author": "Jori A",
+    "title": "Parhaat rantalomat EU",
+    "author": "Pekka I",
     "url": "jotain.com",
     "likes": 100
 }
