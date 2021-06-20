@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/60cc60313103b42cb045c1f7
+Content-Type: application/json
+
+{
+    "title": "Top 10 Parhaat lomakohteet",
+    "author": "Jari Mallikas",
+    "url": "TESTIURL.com",
+    "likes": 9999
+}

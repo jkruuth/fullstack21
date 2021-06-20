@@ -1,9 +1,11 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hbW9sb2wiLCJpZCI6IjYwY2YwYjYyYzUyZjAyMGQ4Y2VjZjQ5MiIsImlhdCI6MTYyNDIwNDU1Mn0.hO9dmvGKJuMoi5i8hDTbfeN62cgnNHS8jTMLIsKAjjw
 
 {
-    "title": "Parhaat rantalomat EU",
-    "author": "Pekka I",
-    "url": "jotain.com",
-    "likes": 100
+    "title": "Deleten testaus",
+    "author": "Milla",
+    "url": "DELETE.com",
+    "likes": 1234,
+    "userId": "60cf0b62c52f020d8cecf492"
 }
